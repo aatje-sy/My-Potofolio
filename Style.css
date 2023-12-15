@@ -40,6 +40,7 @@ body, html {
     font-weight: lighter;
     font-size: x-large;
     text-decoration: none;
+    height: 100px;
 }
 
 .thin-text {
@@ -73,38 +74,29 @@ body, html {
 .bottom-text {
     margin-left: 15%;
     width: 80px;
+}   
+
+.container {
+    display: flex;
+    flex: 1;
+    
 }
 
 .about-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     flex: 1;
     color: white; 
-    padding-left: 2%; 
+    padding-left: 100px; 
 }
 
 .about-bottom {
+    width: 500px;
     display: flex;
-}
-
-.about-txt {
-    width: 200px;
-}
-
-.my-img {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-
-}
-
-.me-img {
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-}
-    
+    flex-direction: column;
+    font-weight: lighter;
+    font-size: large;
+} 
 
 .footer-container {
     display: flex;
@@ -160,11 +152,13 @@ body, html {
     gap: 20px;
     color: white;
     font-weight: lighter;
+    font-size: 20px;
 }
 
 
- 
+
 }
+
 
 @media only screen and (max-width: 350px) {
       
@@ -176,6 +170,7 @@ body, html {
         color: white;
         font-weight: lighter;
     }
+
 
 }
 
