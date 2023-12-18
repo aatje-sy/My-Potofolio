@@ -60,21 +60,7 @@ body, html {
     font-family: 'Kanit', sans-serif;
     color: white;
     font-size: x-large;
-} 
-
-.top-text {
-    margin-right: 15%;
-}
-    
-.middel-text {
-    width: 150px;
-    
-}
-    
-.bottom-text {
-    margin-left: 15%;
-    width: 80px;
-}   
+}    
 
 .container {
     display: flex;
@@ -84,10 +70,17 @@ body, html {
 
 .about-container {
     display: flex;
-    flex-direction: column;
     flex: 1;
     color: white; 
     padding-left: 100px; 
+}
+
+
+.about-top {
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .about-bottom {
@@ -95,8 +88,23 @@ body, html {
     display: flex;
     flex-direction: column;
     font-weight: lighter;
-    font-size: large;
+    font-size: x-large;
 } 
+
+.img-container {
+    height: 400px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    background-color: pink;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
 
 .footer-container {
     display: flex;
@@ -107,10 +115,6 @@ body, html {
     padding-right: 20px;
 }
 
-.img {
-    height: 30px;
-    width: 30px;
-}
 
 
 @media only screen and (max-width: 600px) {
@@ -155,22 +159,10 @@ body, html {
     font-size: 20px;
 }
 
-
-
+.img-container {
+    position: absolute;
+    z-index: -1;
 }
-
-
-@media only screen and (max-width: 350px) {
-      
-    .header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-        color: white;
-        font-weight: lighter;
-    }
-
 
 }
 
